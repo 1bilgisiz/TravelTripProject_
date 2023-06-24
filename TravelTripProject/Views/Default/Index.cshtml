@@ -1,0 +1,108 @@
+﻿@using TravelTripProject.Models.Siniflar
+@model List<Blog>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<body>
+    <div class="header-banner">
+        <div class="wrap">
+            <div class="banner">
+                <div class="indent">
+                    <h2 class="indent-left margin-bot">Tatil Seyehat Blogum</h2>
+                    <div class="banner-left">
+                        <div class="con-text">
+                            <div class="grid1-img">
+                                <img src="/web/images/glass.png" alt="">
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Restaurantlar</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="con-text">
+                            <div class="grid1-img">
+                                <img src="/web/images/flight.png" alt="">
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Uçuşlar</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="con-text">
+                            <div class="grid1-img">
+                                <img src="/web/images/group.png" alt="">
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Yapılacaklar</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="con-text">
+                            <div class="grid1-img">
+                                <img src="/web/images/key.png" alt="">
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Araba Kiralama</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="header_bottom_right_images">
+
+                        <div class="slider">
+                            <ul class="rslides" id="slider1">
+                                <li><img src="/web/images/img1.jpg" alt=""></li>
+                                <li><img src="/web/images/img2.jpg" alt=""></li>
+                                <li><img src="/web/images/img3.jpg" alt=""></li>
+                                <li><img src="/web/images/img4.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class"content">
+        <div class="wrap">
+            <div class="wrapper">
+                <div class="con-top">
+                    <h3>Tatil Seyahat Bloguma Hoşgeldiniz</h3>
+                    <p>
+                        Eskiden gezi yazılarına seyahatname, seyahat yazıları denirdi. Gezip gören insana da seyyah denirdi. Bugün gezen gören kimseye gezgin, onların gezip gördükleri yerleri anlattıkları yazılara da gezi yazıları denmektedir.
+
+                        Gezi yazılarında verilen bilgiler doğru ve gerçek olmalıdır. Bu bakımdan gezi yazıları tarih, coğrafya, edebiyat, toplum bilimi vb. bakımından yararlı kaynaklardır.
+
+                        En eski ve uzun bir geçmişi olan yazı türünün önemli ve tanınmış iki ismi Venedikli Gezgin Marco Polo ile Arap gezgin İbni Batuta’ dır.
+
+                        Bizim edebiyatımızda ilk gezi kitabı ünlü denizcilerimizden Seydi Ali Reis’ in Miratül-Memalik (Ülkelerin Aynası) adlı eseridir.
+                    </p>
+                </div>
+
+                @Html.Action("Partial1","Default")
+
+                <div class="grids">
+                    <div class="box1">
+                       @Html.Action("Partial3","Default")
+                        @Html.Action("Partial4", "Default")
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
